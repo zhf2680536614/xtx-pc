@@ -1,0 +1,6 @@
+/* 公共样式 */
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
