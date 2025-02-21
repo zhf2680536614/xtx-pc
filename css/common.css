@@ -126,6 +126,7 @@
 .header .cart {
     position: relative;
     margin-top: 32px;
+    cursor: pointer;
 }
 
 .header .cart .iconfont {
@@ -144,4 +145,121 @@
     border-radius: 7.5px;
     font-size: 14px;
     color: #FFFEFE;
+}
+
+/* 底部区域 */
+.footer {
+    height: 581.5px;
+    background-color: #F5F5F5;
+}
+
+.footer .service {
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.footer .service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .service li {
+    display: flex;
+    width: 190px;
+    height: 58px;
+    cursor: pointer;
+    /* background-color: #fdb0b0; */
+}
+
+.footer .service li h5 {
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background: url(../images/sprite.png);
+}
+
+.footer .service li:nth-child(2) h5 {
+    background-position: 0 -58px;
+}
+
+.footer .service li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+
+.footer .service li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+
+.footer .service li p {
+    line-height: 58px;
+    font-size: 28px;
+}
+
+.footer .help {
+    height: 302.5px;
+    /* background-color: #a1a1a1; */
+}
+
+.footer .help {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer .help .left {
+    display: flex;
+}
+
+.footer .help .left dl {
+    margin-right: 84px;
+}
+
+.footer .help .left dl:last-child {
+    margin-right: 0;
+}
+
+.footer .help .left dt {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.footer .help .left dd {
+    margin-bottom: 10.5px;
+}
+
+.footer .help .left dd a {
+    color: #969696;
+}
+
+.footer .help .left .iconfont {
+    color: #5EB69C;
+}
+
+.footer .help .right ul {
+    display: flex;
+}
+
+.footer .help .right ul li:first-child {
+    margin-right: 55px;
+}
+
+.footer .help .right ul .pic {
+    margin-bottom: 10px;
+}
+
+.footer .help .right ul p {
+    color: #969696;
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #A1A1A1;
+}
+
+.copyright p a {
+    margin: 0 10px;
+    color: #A1A1A1;
 }
