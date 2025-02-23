@@ -151,8 +151,11 @@
     font-size: 20px;
 }
 
-.goods .bd ul li .text p {
+.bd ul li .text {
     text-align: center;
+}
+
+.goods .bd ul li .text p {
     font-size: 22px;
     color: #AA2113;
 }
@@ -162,5 +165,14 @@
 }
 
 .bd ul li:hover {
-    box-shadow: 0 0 3px 3px rgba(197, 196, 196, 0.5);
+    box-shadow: 0 0 2px 2px rgba(197, 196, 196, 0.5);
+}
+
+/* 人气推荐 */
+.recommend .bd li {
+    background-color: #fff;
+}
+
+.recommend .bd .text p {
+    color: #A1A1A1;
 }
