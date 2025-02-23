@@ -1,1 +1,96 @@
 /* 首页CSS样式 */
+
+/* 轮播图 */
+.banner .wrapper {
+    position: relative;
+    height: 500;
+    overflow: hidden;
+}
+
+.banner .wrapper .pic {
+    display: flex;
+    /* 因为父级为flex布局,子级宽度过大会被压缩,所以需要将父级的宽度增大 */
+    width: 3720px;
+}
+
+.banner .subnav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner .subnav li {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.banner .subnav li:hover {
+    background-color: #00BE9A;
+}
+
+.banner .subnav li a {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner .subnav li .category {
+    margin-right: 14px;
+    font-size: 16px;
+}
+
+.banner .subnav li .iconfont {
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner ol {
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+    display: flex;
+}
+
+.banner ol li {
+    margin-left: 8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+
+.banner ol li i {
+    /* i 标签时行内元素,需要转为块级或行内块才可以使长与宽生效 */
+    display: block;
+    margin: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+
+.banner ol .active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol .active i {
+    background-color: #fff;
+}
+
+.banner ol li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol li:hover i {
+    background-color: #fff;
+}

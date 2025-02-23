@@ -90,6 +90,7 @@
 .header .nav a {
     display: block;
     padding-bottom: 10px;
+    transition: all 0.1s;
 }
 
 .header .nav a:hover {
