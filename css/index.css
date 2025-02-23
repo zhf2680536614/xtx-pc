@@ -94,3 +94,73 @@
 .banner ol li:hover i {
     background-color: #fff;
 }
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 42px;
+}
+
+.title .left {
+    display: flex;
+}
+
+.title .left h3 {
+    margin-right: 35px;
+    font-size: 30px;
+}
+
+.title .left p {
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+
+.title .right {
+    color: #A1A1A1;
+    cursor: pointer;
+}
+
+.title .right a {
+    margin-right: 10px;
+    color: #A1A1A1;
+}
+
+.bd ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd ul li {
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+    transition: all 0.5s;
+}
+
+.bd ul li .pic {
+    width: 304px;
+    height: 304px;
+}
+
+.bd ul li .text h5 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.goods .bd ul li .text p {
+    text-align: center;
+    font-size: 22px;
+    color: #AA2113;
+}
+
+.goods .bd ul li .text p span {
+    margin-left: 3px;
+}
+
+.bd ul li:hover {
+    box-shadow: 0 0 3px 3px rgba(197, 196, 196, 0.5);
+}
