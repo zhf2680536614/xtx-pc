@@ -66,6 +66,7 @@
     height: 22px;
     border-radius: 50%;
     transition: all 0.1s;
+    cursor: pointer;
 }
 
 .banner ol li i {
@@ -118,6 +119,7 @@
 }
 
 .title .right {
+    line-height: 42px;
     color: #A1A1A1;
     cursor: pointer;
 }
@@ -165,7 +167,7 @@
 }
 
 .bd ul li:hover {
-    box-shadow: 0 0 2px 2px rgba(197, 196, 196, 0.5);
+    box-shadow: 0 0 2px 2px rgba(178, 195, 185, 0.5);
 }
 
 /* 人气推荐 */
@@ -175,4 +177,191 @@
 
 .recommend .bd .text p {
     color: #A1A1A1;
+}
+
+/* 热门品牌 */
+.brand {
+    margin-top: 60px;
+    height: 468px;
+    background-color: #F5F5F5;
+}
+
+.brand .wrapper {
+    height: 468px;
+    /* background-color: #ffa8a8; */
+    /* 由于标题加了外上边距，出现了外边距塌陷的问题 */
+    overflow: hidden;
+}
+
+.brand .wrapper .title {
+    position: relative;
+}
+
+.brand .wrapper .title .button {
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
+    display: flex;
+}
+
+.brand .button a {
+    margin-left: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    transition: all 0.1s;
+}
+
+.brand .button a:hover {
+    background-color: #00BE9A;
+}
+
+.brand .button .prev {
+    background-color: #ddd;
+}
+
+.brand .button .next {
+    background-color: #00BE9A;
+}
+
+.brand .button i {
+    color: #fff;
+}
+
+.brand .bd li {
+    width: 244px;
+    height: 306px;
+}
+
+/* 生鲜 */
+.title .right {
+    display: flex;
+}
+
+.title .right ul {
+    display: flex;
+    margin-right: 58px;
+    margin-top: 12px;
+}
+
+.title .right li a {
+    display: block;
+    margin-left: 6px;
+    padding: 0 7px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.1s;
+}
+
+.title .right li .active {
+    background-color: #00BE9A;
+    color: #fff;
+}
+
+.title .right li:hover a {
+    background-color: #00BE9A;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 610px;
+}
+
+.content .left {
+    width: 248px;
+    height: 610px;
+}
+
+.content .right {
+    width: 968px;
+    height: 610px;
+}
+
+.content .right ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .right li {
+    position: relative;
+    padding-top: 14px;
+    padding-left: 26px;
+    width: 242px;
+    height: 305px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.content .pic {
+    width: 190px;
+    height: 171px;
+}
+
+.content .info {
+    margin-top: 14.5px;
+    margin-bottom: 7px;
+    height: 57px;
+    line-height: 19px;
+}
+
+.content .info h4 {
+    font-size: 16px;
+}
+
+.content .price {
+    color: #AF2F22;
+}
+
+.content .price span {
+    font-size: 22px;
+    margin-left: 3px;
+}
+
+.content .cover {
+    position: absolute;
+    left: 0;
+    bottom: -83px;
+    padding-top: 15px;
+    width: 242px;
+    height: 83px;
+    background-color: #00BE9A;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.content .cover p {
+    color: #fff;
+    cursor: pointer;
+}
+
+.content .cover p:nth-child(1) {
+    font-size: 18px;
+}
+
+.content .cover p:nth-child(2) {
+    margin: 5px auto;
+    width: 120px;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content .cover p:nth-child(3) {
+    font-size: 13px;
+}
+
+.content .cover p span {
+    font-size: 13px;
+}
+
+.content li:hover {
+    border: 2px solid #00BE9A;
+}
+
+.content li:hover .cover {
+    bottom: 0;
 }
